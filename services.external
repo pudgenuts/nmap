@@ -1,0 +1,1357 @@
+http	80/tcp	0.480274	# World Wide Web HTTP
+https	443/tcp	0.479685	# secure http (SSL)
+ftp	21/tcp	0.002774	# File Transfer [Control]
+ssh	22/tcp	0.002245	# Secure Shell Login
+domain	53/tcp	0.001717	# Domain Name Server
+ftps	990/tcp	0.000898	# ftp protocol, control, over TLS/SSL
+sip	5060/tcp	0.000894	# Session Initiation Protocol (SIP)
+h323q931	1720/tcp	0.000739	# h323hostcall | Interactive media | H.323 Call Control Signalling | H.323 Call Control
+sip-tls	5061/tcp	0.000727	# SIP-TLS
+https-alt	8443/tcp	0.000672	# pcsync-https | Common alternative https port | PCsync HTTPS
+bgmp	264/tcp	0.000604	
+snmp	161/tcp	0.000592	
+unknown	50001/tcp	0.000429	
+ies-lm	1443/tcp	0.000421	# Integrated Engineering Software
+EtherNetIP-1	2222/tcp	0.000397	# EtherNet/IP-1 | EtherNet-IP-1 | EtherNet/IP I/O
+ppp	3000/tcp	0.000386	# remoteware-cl | hbci | User-level ppp daemon, or chili!soft asp | HBCI | RemoteWare Client
+sometimes-rpc5	32771/tcp	0.000374	# filenet-rmi | Sometimes an RPC port on my Solaris box (rusersd) | FileNET RMI | FileNet RMI
+sometimes-rpc3	32770/tcp	0.000354	# filenet-nch | Sometimes an RPC port on my Solaris box | Filenet NCH
+sometimes-rpc7	32772/tcp	0.000338	# filenet-pa | Sometimes an RPC port on my Solaris box (status) | FileNET Process Analyzer
+ccproxy-ftp	2121/tcp	0.000302	# scientia-ssdb | CCProxy FTP Proxy | SCIENTIA-SSDB
+ssad	4750/tcp	0.000298	# Simple Service Auto Discovery
+filenet-rpc	32769/tcp	0.000298	# Filenet RPC
+ddi-tcp-4	8891/tcp	0.000278	# ddi-udp-4 | Desktop Data TCP 3: NESS application | Desktop Data UDP 3: NESS application
+hp-alarm-mgr	383/tcp	0.000270	# hp performance data alarm manager
+unknown	18264/tcp	0.000270	
+http-proxy	8080/tcp	0.000254	# http-alt | Common HTTP proxy/second web server port | HTTP Alternate (see port 80)
+unknown	50003/tcp	0.000238	
+rpcbind	111/tcp	0.000234	# sunrpc | portmapper, rpcbind | SUN Remote Procedure Call
+iiimsf	50002/tcp	0.000234	# Internet/Intranet Input Method Server Framework
+sometimes-rpc9	32773/tcp	0.000231	# filenet-cm | Sometimes an RPC port on my Solaris box (rquotad) | FileNET Component Manager
+monkeycom	9898/tcp	0.000223	
+isakmp	500/tcp	0.000219	
+seosload	8892/tcp	0.000215	# ddi-udp-5 | ddi-tcp-5 | From the new Computer Associates eTrust ACX | Desktop Data TCP 4: FARM product | Desktop Data UDP 4: FARM product
+upnotifyp	4445/tcp	0.000199	
+unknown	56999/tcp	0.000187	
+http-alt	8000/tcp	0.000179	# irdmi | A common alternative http port | iRDMI
+winjaserver	1290/tcp	0.000171	
+servexec	2021/tcp	0.000171	# xinuexpansion1
+bmc-perf-sd	10128/tcp	0.000167	# BMC-PERFORM-SERVICE DAEMON
+writesrv	1334/tcp	0.000163	
+unknown	56998/tcp	0.000147	
+rmc	657/tcp	0.000143	
+autodesk-nlm	2080/tcp	0.000143	# Autodesk NLM (FLEXlm)
+sometimes-rpc11	32774/tcp	0.000143	# filenet-re | Sometimes an RPC port on my Solaris box (rusersd) | FileNET Rules Engine
+nessus	3001/tcp	0.000139	# origo-native | Nessus Security Scanner (www.nessus.org) Daemon or chili!soft asp | OrigoDB Server Native Interface
+afs3-callback	7001/tcp	0.000139	# callbacks to cache managers
+bigbrother	1984/tcp	0.000135	# bb | Big Brother monitoring server - www.bb4.com | BB
+excerpts	5401/tcp	0.000135	# Excerpt Search Secure
+rlm	5053/tcp	0.000123	# rlm-disc | RLM License Server | RLM Discovery Server
+xmpp-client	5222/tcp	0.000119	# XMPP Client Connection
+xprtld	5634/tcp	0.000111	# SF Message Service
+sas-3	1501/tcp	0.000107	# saiscm | Satellite-data Acquisition System 3
+pptp	1723/tcp	0.000107	# Point-to-point tunnelling protocol
+ms-wbt-server	3389/tcp	0.000107	# Microsoft Remote Display Protocol (aka ms-term-serv, microsoft-rdp) | MS WBT Server
+zeus-admin	9090/tcp	0.000107	# websm | Zeus admin server | WebSM
+unknown	8089/tcp	0.000099	
+bo2k	14141/tcp	0.000099	# vcs-app | Back Orifice 2K BoPeep mouse/keyboard input | VCS Application
+smtp	25/tcp	0.000095	# Simple Mail Transfer
+down	2022/tcp	0.000095	# xinuexpansion2
+teradataordbms	8002/tcp	0.000095	# Teradata ORDBMS
+unknown	57777/tcp	0.000095	
+smux	199/tcp	0.000091	# SNMP Unix Multiplexer
+magicnotes	3023/tcp	0.000087	
+slnp	3025/tcp	0.000087	# arepa-raft | SLNP (Simple Library Network Protocol) by Sisis Informationssysteme GmbH | Arepa Raft
+vcscmd	14150/tcp	0.000087	# Veritas Cluster Server Command Server
+rtmp	1935/tcp	0.000083	# macromedia-fcs | Macromedia FlasComm Server | Macromedia Flash Communications Server MX | Macromedia Flash Communications server MX
+ridgeway1	2776/tcp	0.000083	# Ridgeway Systems & Software
+p4p-portal	6671/tcp	0.000079	# P4P Portal Service
+ndm-server	1364/tcp	0.000076	# Network DataMover Server
+igo-incognito	4100/tcp	0.000076	# IGo Incognito Data Port
+irc	6666/tcp	0.000076	# internet relay chat server
+unknown	28002/tcp	0.000072	
+snpp	444/tcp	0.000060	# Simple Network Paging Protocol
+unknown	30005/tcp	0.000060	
+wbem-http	5988/tcp	0.000056	# WBEM CIM-XML (HTTP)
+wbem-https	5989/tcp	0.000056	# WBEM CIM-XML (HTTPS)
+unknown	6988/tcp	0.000056	
+ucs-isc	8070/tcp	0.000056	# Oracle Unified Communication Suite's Indexed Search Converter
+bmc-perf-agent	6767/tcp	0.000052	# BMC PERFORM AGENT
+powerclientcsf	2443/tcp	0.000048	# PowerClient Central Storage Facility
+unknown	8068/tcp	0.000048	
+nfs	2049/tcp	0.000044	# networked file system
+oem-agent	3872/tcp	0.000044	# OEM Agent
+commplex-link	5001/tcp	0.000044	
+sometimes-rpc13	32775/tcp	0.000044	# filenet-pch | Sometimes an RPC port on my Solaris box (status) | Performance Clearinghouse
+sometimes-rpc15	32776/tcp	0.000044	# filenet-peior | Sometimes an RPC port on my Solaris box (sprayd) | FileNET BPM IOR
+bgp	179/tcp	0.000040	# Border Gateway Protocol
+rtsp	554/tcp	0.000040	# Real Time Stream Control Protocol | Real Time Streaming Protocol (RTSP)
+lorica-in	4080/tcp	0.000040	# Lorica inside facing
+rfe	5002/tcp	0.000040	# Radio Free Ethernet | radio free ethernet
+unknown	6987/tcp	0.000040	
+elcn	7101/tcp	0.000040	# Embedded Light Control Network
+unknown	9510/tcp	0.000040	
+unknown	14248/tcp	0.000040	
+unknown	41511/tcp	0.000040	
+svrloc	427/tcp	0.000036	# Server Location
+uucp-rlogin	541/tcp	0.000036	
+resvc	691/tcp	0.000036	# msexch-routing | The Microsoft Exchange 2000 Server Routing Service | MS Exchange Routing
+ms-sql-s	1433/tcp	0.000036	# Microsoft-SQL-Server
+admdog	5101/tcp	0.000036	# talarian-udp | talarian-tcp | (chili!soft asp) | Talarian_TCP | Talarian_UDP
+unknown	57119/tcp	0.000036	
+unknown	57361/tcp	0.000036	
+hosts2-ns	81/tcp	0.000032	# HOSTS2 Name Server
+msrpc	135/tcp	0.000032	# epmap | Microsoft RPC services | DCE endpoint resolution
+microsoft-ds	445/tcp	0.000032	# SMB directly over IP
+cichild-lm	1523/tcp	0.000032	# cichild
+mil-2045-47001	1581/tcp	0.000032	
+exlm-agent	3002/tcp	0.000032	# remoteware-srv | EXLM Agent | RemoteWare Server
+trusted-web	3011/tcp	0.000032	# Trusted Web
+unknown	7522/tcp	0.000032	
+filenet-tms	32768/tcp	0.000032	# Filenet TMS
+unknown	41523/tcp	0.000032	
+unknown	47632/tcp	0.000032	
+mit-ml-dev	83/tcp	0.000028	# MIT ML Device
+mit-ml-dev	85/tcp	0.000028	# MIT ML Device
+NFS-or-IIS	1025/tcp	0.000028	# blackjack | IIS, NFS, or listener RFS remote_file_sharing | network blackjack
+cisco-sccp	2000/tcp	0.000028	# cisco SCCP (Skinny Client Control Protocol) | Cisco SCCP | Cisco SCCp
+xandros-cms	4389/tcp	0.000028	# Xandros Community Management Service
+n1-rmgmt	4447/tcp	0.000028	
+smart-install	4786/tcp	0.000028	# Smart Install Service
+vision_server	6672/tcp	0.000028	# vision-server
+radan-http	8088/tcp	0.000028	# Radan HTTP
+unknown	41123/tcp	0.000028	
+unknown	41142/tcp	0.000028	
+unknown	41318/tcp	0.000028	
+unknown	41342/tcp	0.000028	
+unknown	41345/tcp	0.000028	
+unknown	41348/tcp	0.000028	
+unknown	41398/tcp	0.000028	
+unknown	41551/tcp	0.000028	
+unknown	41632/tcp	0.000028	
+unknown	41773/tcp	0.000028	
+crestron-cip	41794/tcp	0.000028	# Crestron Control Port
+crestron-ctp	41795/tcp	0.000028	# Crestron Terminal Port
+unknown	41808/tcp	0.000028	
+unknown	48052/tcp	0.000028	
+unknown	48499/tcp	0.000028	
+ctf	84/tcp	0.000024	# Common Trace Facility
+netbios-ssn	139/tcp	0.000024	# NETBIOS Session Service
+anynetgateway	1491/tcp	0.000024	
+kip	2112/tcp	0.000024	# idonix-metanet | IP over kerberos | Idonix MetaNet
+compaqdiag	2301/tcp	0.000024	# cpq-wbem | Compaq remote diagnostic/management | Compaq HTTP
+compaq-https	2381/tcp	0.000024	# Compaq HTTPS
+pxc-ntfy	3009/tcp	0.000024	
+xmpp-server	5269/tcp	0.000024	# XMPP Server Connection
+unknown	7773/tcp	0.000024	
+ajp13	8009/tcp	0.000024	# Apache JServ Protocol 1.3
+unknown	41250/tcp	0.000024	
+unknown	41281/tcp	0.000024	
+unknown	41442/tcp	0.000024	
+nimgtw	48003/tcp	0.000024	# Nimbus Gateway
+unknown	48100/tcp	0.000024	
+unknown	48102/tcp	0.000024	
+unknown	48103/tcp	0.000024	
+unknown	48104/tcp	0.000024	
+unknown	49153/tcp	0.000024	
+unknown	49154/tcp	0.000024	
+unknown	49155/tcp	0.000024	
+unknown	58080/tcp	0.000024	
+audit	182/tcp	0.000020	# Unisys Audit SITP
+914c-g	211/tcp	0.000020	# 914c/g | Texas Instruments 914C/G Terminal
+boscap	2990/tcp	0.000020	
+csregagent	3022/tcp	0.000020	
+dnx	3998/tcp	0.000020	# Distributed Nagios Executor Service
+pcoip	4172/tcp	0.000020	# PC over IP
+f5-iquery	4353/tcp	0.000020	# F5 iQuery
+filemaker	5003/tcp	0.000020	# fmpro-internal | Filemaker Server - http://www.filemaker.com/ti/104289.html | FileMaker, Inc. - Proprietary transport | FileMaker, Inc. - Proprietary name binding
+hotline	5500/tcp	0.000020	# Hotline file sharing client/server | fcp-addr-srvr1
+bittorrent-tracker	6881/tcp	0.000020	# BitTorrent tracker
+d-s-n	8086/tcp	0.000020	# Distributed SCADA Networking Rendezvous Port
+unknown	31232/tcp	0.000020	
+unknown	31234/tcp	0.000020	
+unknown	31236/tcp	0.000020	
+unknown	31244/tcp	0.000020	
+unknown	31260/tcp	0.000020	
+unknown	31270/tcp	0.000020	
+unknown	31276/tcp	0.000020	
+sometimes-rpc17	32777/tcp	0.000020	# filenet-obrok | Sometimes an RPC port on my Solaris box (walld) | FileNet BPM CORBA
+unknown	33085/tcp	0.000020	
+unknown	40084/tcp	0.000020	
+unknown	48391/tcp	0.000020	
+unknown	48584/tcp	0.000020	
+unknown	48600/tcp	0.000020	
+unknown	49152/tcp	0.000020	
+unknown	57304/tcp	0.000020	
+telnet	23/tcp	0.000016	
+remotefs	556/tcp	0.000016	# rfs, rfs_server, Brunhoff remote filesystem | rfs server
+citrix-ica	1494/tcp	0.000016	# ica
+caupc-remote	2122/tcp	0.000016	# CauPC Remote Control
+citrixima	2512/tcp	0.000016	# Citrix IMA
+citriximaclient	2598/tcp	0.000016	# Citrix MA Client
+midnight-tech	3008/tcp	0.000016	# Midnight Technologies
+gw	3010/tcp	0.000016	# ping-pong | Telerate Workstation
+whisker	3233/tcp	0.000016	# WhiskerControl main port
+pharos	4443/tcp	0.000016	
+csrpc	5063/tcp	0.000016	# centrify secure RPC
+stanag-5066	5066/tcp	0.000016	# STANAG-5066-SUBNET-INTF
+onscreen	5080/tcp	0.000016	# OnScreen Data Collection Service
+freeciv	5556/tcp	0.000016	# Freeciv gameplay
+wsman	5985/tcp	0.000016	# WBEM WS-Management HTTP
+dtspc	6112/tcp	0.000016	# dtspcd | CDE subprocess control | Desk-Top Sub-Process Control Daemon
+unknown	6177/tcp	0.000016	
+unknown	8099/tcp	0.000016	
+unknown	9031/tcp	0.000016	
+unknown	9035/tcp	0.000016	
+unknown	20021/tcp	0.000016	
+unknown	31202/tcp	0.000016	
+unknown	31206/tcp	0.000016	
+unknown	31208/tcp	0.000016	
+unknown	31210/tcp	0.000016	
+unknown	31212/tcp	0.000016	
+unknown	31214/tcp	0.000016	
+unknown	31216/tcp	0.000016	
+unknown	31220/tcp	0.000016	
+unknown	31222/tcp	0.000016	
+unknown	31224/tcp	0.000016	
+unknown	31228/tcp	0.000016	
+unknown	31240/tcp	0.000016	
+unknown	31242/tcp	0.000016	
+unknown	31246/tcp	0.000016	
+unknown	31252/tcp	0.000016	
+unknown	31256/tcp	0.000016	
+unknown	31264/tcp	0.000016	
+unknown	31266/tcp	0.000016	
+unknown	31272/tcp	0.000016	
+unknown	31274/tcp	0.000016	
+unknown	31278/tcp	0.000016	
+unknown	31280/tcp	0.000016	
+unknown	31282/tcp	0.000016	
+unknown	31284/tcp	0.000016	
+sometimes-rpc19	32778/tcp	0.000016	# Sometimes an RPC port on my Solaris box (rstatd)
+unknown	33078/tcp	0.000016	
+aurora-balaena	33123/tcp	0.000016	# Aurora (Balaena Ltd)
+unknown	40101/tcp	0.000016	
+winrm	47001/tcp	0.000016	# Windows Remote Management Service
+unknown	48009/tcp	0.000016	
+unknown	48200/tcp	0.000016	
+unknown	48201/tcp	0.000016	
+unknown	48301/tcp	0.000016	
+unknown	48303/tcp	0.000016	
+unknown	48309/tcp	0.000016	
+unknown	48321/tcp	0.000016	
+unknown	48327/tcp	0.000016	
+unknown	48333/tcp	0.000016	
+unknown	48347/tcp	0.000016	
+unknown	48363/tcp	0.000016	
+unknown	48377/tcp	0.000016	
+unknown	48381/tcp	0.000016	
+unknown	48387/tcp	0.000016	
+unknown	48586/tcp	0.000016	
+unknown	49006/tcp	0.000016	
+unknown	49008/tcp	0.000016	
+unknown	49009/tcp	0.000016	
+unknown	52028/tcp	0.000016	
+unknown	55580/tcp	0.000016	
+unknown	58055/tcp	0.000016	
+unknown	58056/tcp	0.000016	
+prat	1264/tcp	0.000012	
+ndm-requester	1363/tcp	0.000012	# Network DataMover Requester
+stone-design-1	1492/tcp	0.000012	
+nasmanager	1960/tcp	0.000012	# Merit DAC NASmanager
+bts-appserver	1961/tcp	0.000012	# BTS APPSERVER
+xinupageserver	2020/tcp	0.000012	
+nds_sso	3024/tcp	0.000012	# nds-sso
+lockd	4045/tcp	0.000012	# npp | Network Paging Protocol
+telelpathstart	5010/tcp	0.000012	# TelepathStart
+X11:1	6001/tcp	0.000012	# X Window server
+unknown	6191/tcp	0.000012	
+clariion-evr01	6389/tcp	0.000012	
+servicetags	6481/tcp	0.000012	# Service Tags
+font-service	7100/tcp	0.000012	# X Font Service
+sdr	9010/tcp	0.000012	# Secure Data Replicator Protocol
+unknown	23152/tcp	0.000012	
+icl-twobase1	25000/tcp	0.000012	
+unknown	30421/tcp	0.000012	
+unknown	31204/tcp	0.000012	
+unknown	31218/tcp	0.000012	
+unknown	31226/tcp	0.000012	
+unknown	31230/tcp	0.000012	
+unknown	31238/tcp	0.000012	
+unknown	31248/tcp	0.000012	
+unknown	31254/tcp	0.000012	
+unknown	31258/tcp	0.000012	
+unknown	31262/tcp	0.000012	
+unknown	31268/tcp	0.000012	
+unknown	31286/tcp	0.000012	
+unknown	31288/tcp	0.000012	
+unknown	31290/tcp	0.000012	
+unknown	40102/tcp	0.000012	
+unknown	48305/tcp	0.000012	
+unknown	48307/tcp	0.000012	
+unknown	48315/tcp	0.000012	
+unknown	48319/tcp	0.000012	
+unknown	48331/tcp	0.000012	
+unknown	48343/tcp	0.000012	
+unknown	48345/tcp	0.000012	
+unknown	48349/tcp	0.000012	
+unknown	48353/tcp	0.000012	
+unknown	48357/tcp	0.000012	
+unknown	48359/tcp	0.000012	
+unknown	48365/tcp	0.000012	
+unknown	48375/tcp	0.000012	
+unknown	48379/tcp	0.000012	
+unknown	48389/tcp	0.000012	
+unknown	48588/tcp	0.000012	
+unknown	48589/tcp	0.000012	
+unknown	57110/tcp	0.000012	
+unknown	57118/tcp	0.000012	
+unknown	57244/tcp	0.000012	
+printer	515/tcp	0.000008	# spooler (lpd) | spooler
+submission	587/tcp	0.000008	# Message Submission
+lanserver	637/tcp	0.000008	
+ftps-data	989/tcp	0.000008	# ftp protocol, data, over TLS/SSL
+rockwell-csp2	2223/tcp	0.000008	# Rockwell CSP2
+cgms	3003/tcp	0.000008	
+cfs	3049/tcp	0.000008	# nsws | cryptographic file system (nfs) (proposed) | NSWS
+mysql	3306/tcp	0.000008	
+tram	4567/tcp	0.000008	
+unknown	5038/tcp	0.000008	
+nrpe	5666/tcp	0.000008	# Nagios NRPE | Nagios Remote Plugin Executor
+X11:2	6002/tcp	0.000008	# X Window server
+vision_elmd	6673/tcp	0.000008	# vision-elmd
+unknown	7524/tcp	0.000008	
+ca-audit-da	8025/tcp	0.000008	# CA Audit Distribution Agent
+unknown	11812/tcp	0.000008	
+unknown	30422/tcp	0.000008	
+unknown	30423/tcp	0.000008	
+unknown	31111/tcp	0.000008	
+unknown	31200/tcp	0.000008	
+unknown	32983/tcp	0.000008	
+unknown	33064/tcp	0.000008	
+unknown	33070/tcp	0.000008	
+unknown	33072/tcp	0.000008	
+unknown	33075/tcp	0.000008	
+unknown	33076/tcp	0.000008	
+unknown	33086/tcp	0.000008	
+unknown	33089/tcp	0.000008	
+unknown	33095/tcp	0.000008	
+unknown	33103/tcp	0.000008	
+unknown	33106/tcp	0.000008	
+unknown	33112/tcp	0.000008	
+unknown	33131/tcp	0.000008	
+unknown	33200/tcp	0.000008	
+unknown	33205/tcp	0.000008	
+unknown	40001/tcp	0.000008	
+unknown	40086/tcp	0.000008	
+unknown	40088/tcp	0.000008	
+unknown	40089/tcp	0.000008	
+unknown	41247/tcp	0.000008	
+unknown	41364/tcp	0.000008	
+unknown	41742/tcp	0.000008	
+unknown	43662/tcp	0.000008	
+unknown	48105/tcp	0.000008	
+unknown	48112/tcp	0.000008	
+unknown	48113/tcp	0.000008	
+unknown	48114/tcp	0.000008	
+unknown	48115/tcp	0.000008	
+unknown	48311/tcp	0.000008	
+unknown	48317/tcp	0.000008	
+unknown	48325/tcp	0.000008	
+unknown	48329/tcp	0.000008	
+unknown	48335/tcp	0.000008	
+unknown	48341/tcp	0.000008	
+unknown	48355/tcp	0.000008	
+unknown	48367/tcp	0.000008	
+unknown	48371/tcp	0.000008	
+unknown	48385/tcp	0.000008	
+unknown	49004/tcp	0.000008	
+unknown	49021/tcp	0.000008	
+unknown	49156/tcp	0.000008	
+unknown	54547/tcp	0.000008	
+unknown	57120/tcp	0.000008	
+unknown	57309/tcp	0.000008	
+la-maint	51/tcp	0.000004	# IMP Logical Address Maintenance
+kerberos-sec	88/tcp	0.000004	# kerberos | Kerberos (v5) | Kerberos
+iso-ip	147/tcp	0.000004	
+aed-512	149/tcp	0.000004	# AED 512 Emulation Service
+sql-net	150/tcp	0.000004	
+prospero	191/tcp	0.000004	# Prospero Directory Service
+dayna	244/tcp	0.000004	# inbusiness
+is99s	380/tcp	0.000004	# TIA/EIA/IS-99 modem server
+ldap	389/tcp	0.000004	# Lightweight Directory Access Protocol
+prm-nm	409/tcp	0.000004	# Prospero Resource Manager Node Man.
+rmt	411/tcp	0.000004	# Remote MT Protocol
+ticf-1	492/tcp	0.000004	# Transport Independent Convergence for FNA
+mm-admin	534/tcp	0.000004	# windream | MegaMedia Admin | windream Admin
+kshell	544/tcp	0.000004	# krcmd Kerberos (v4/v5) | krcmd
+rmonitor	560/tcp	0.000004	# rmonitord
+sco-websrvrmg3	598/tcp	0.000004	# SCO Web Server Manager 3
+npmp-gui	611/tcp	0.000004	
+doom	666/tcp	0.000004	# mdqs | Id Software Doom | doom Id Software
+cimplex	673/tcp	0.000004	
+epp	700/tcp	0.000004	# Extensible Provisioning Protocol
+unknown	727/tcp	0.000004	
+rrh	753/tcp	0.000004	
+con	759/tcp	0.000004	
+webster	765/tcp	0.000004	
+unknown	864/tcp	0.000004	
+unknown	883/tcp	0.000004	
+unknown	915/tcp	0.000004	
+busboy	998/tcp	0.000004	# puparp
+garcon	999/tcp	0.000004	# puprouter | applix | Applix ac
+afrog	1042/tcp	0.000004	# Subnet Roaming
+td-postman	1049/tcp	0.000004	# Tobit David Postman VPMN
+nicelink	1095/tcp	0.000004	
+lmsocialserver	1111/tcp	0.000004	# LM Social Server
+atc-lm	1170/tcp	0.000004	# AT+C License Manager
+isbconference2	1245/tcp	0.000004	
+bspne-pcc	1252/tcp	0.000004	
+objective-dbc	1388/tcp	0.000004	# Objective Solutions DataBase Cache
+goldleaf-licman	1401/tcp	0.000004	# Goldleaf License Manager
+prm-sm-np	1402/tcp	0.000004	# Prospero Resource Manager
+prm-nm-np	1403/tcp	0.000004	# Prospero Resource Manager
+igi-lm	1404/tcp	0.000004	# Infinite Graphics License Manager
+ibm-res	1405/tcp	0.000004	# IBM Remote Execution Starter
+netlabs-lm	1406/tcp	0.000004	# NetLabs License Manager
+novell-lu6.2	1416/tcp	0.000004	# novell-lu6-2 | Novell LU6.2
+timbuktu-srv2	1418/tcp	0.000004	# Timbuktu Service 2 Port
+gtegsc-lm	1452/tcp	0.000004	# GTE Government Systems License Man
+genie-lm	1453/tcp	0.000004	# Genie License Manager
+interhdl_elmd	1454/tcp	0.000004	# interhdl-elmd | interHDL License Manager
+esl-lm	1455/tcp	0.000004	# ESL License Manager
+dca	1456/tcp	0.000004	
+afs	1483/tcp	0.000004	# AFS License Manager
+localinfosrvr	1487/tcp	0.000004	
+liberty-lm	1496/tcp	0.000004	
+rfx-lm	1497/tcp	0.000004	
+support	1529/tcp	0.000004	# coauthor | prmsd gnatsd	# cygnus bug tracker | oracle
+tsspmap	1568/tcp	0.000004	
+itscomm-ns	1573/tcp	0.000004	
+ibm-abtact	1586/tcp	0.000004	
+inspect	1602/tcp	0.000004	
+icabrowser	1604/tcp	0.000004	
+slm-api	1606/tcp	0.000004	# Salutation Manager (SLM-API)
+cert-initiator	1639/tcp	0.000004	
+dec-mbadmin	1655/tcp	0.000004	
+sg-lm	1659/tcp	0.000004	# Silicon Grail License Manager
+darcorp-lm	1679/tcp	0.000004	
+n2nremote	1685/tcp	0.000004	
+iberiagames	1726/tcp	0.000004	
+ncpm-ft	1744/tcp	0.000004	
+spss-lm	1759/tcp	0.000004	# SPSS License Manager
+global-dtserv	1774/tcp	0.000004	
+finle-lm	1784/tcp	0.000004	# Finle License Manager
+linkname	1903/tcp	0.000004	# Local Link Name Resolution
+finger	2003/tcp	0.000004	# brutus | GNU finger (cfingerd) | Brutus Server
+gtp-control	2123/tcp	0.000004	# GTP-Control Plane (3GPP)
+eforward	2181/tcp	0.000004	
+lnvalarm	2282/tcp	0.000004	
+dna	2287/tcp	0.000004	
+3com-net-mgmt	2391/tcp	0.000004	# 3COM Net Management
+ms-olap2	2394/tcp	0.000004	# SQL Server Downlevel OLAP Client Support | MS OLAP 2
+bgpd	2605/tcp	0.000004	# nsc-posa | BGPd vty | NSC POSA
+ridgeway2	2777/tcp	0.000004	# Ridgeway Systems & Software
+corbaloc	2809/tcp	0.000004	# Corba | CORBA LOC
+netsteward	2810/tcp	0.000004	# Active Net Steward
+ovalarmsrv-cmd	2954/tcp	0.000004	
+bmcpatrolagent	3181/tcp	0.000004	# BMC Patrol Agent
+btrieve	3351/tcp	0.000004	# Btrieve port
+ssql	3352/tcp	0.000004	# Scalable SQL
+geneous	3381/tcp	0.000004	
+quest-data-hub	3566/tcp	0.000004	# Quest Data Hub
+nuts_bootp	4133/tcp	0.000004	# nuts-bootp | NUTS Bootp Server
+wincim	4144/tcp	0.000004	# pc windows compuserve.com protocol
+n1-fwp	4446/tcp	0.000004	
+a25-fap-fgw	4502/tcp	0.000004	# A25 (FAP-FGW)
+rid	4590/tcp	0.000004	# RID over HTTP/TLS
+ca-2	5065/tcp	0.000004	# Channel Access 2
+qcp	5082/tcp	0.000004	# Qpur Communication Protocol
+llrp	5084/tcp	0.000004	# EPCglobal Low-Level Reader Protocol
+smbdirect	5445/tcp	0.000004	# Server Message Block over Remote Direct Memory Access
+freeciv	5555/tcp	0.000004	# personal-agent | Personal Agent
+prosharedata	5715/tcp	0.000004	# proshare conf data
+unknown	5798/tcp	0.000004	
+X11:3	6003/tcp	0.000004	# X Window server
+X11:4	6004/tcp	0.000004	# X Window server
+arcserve	6050/tcp	0.000004	# ARCserve agent
+gue	6080/tcp	0.000004	# Generic UDP Encapsulation
+unknown	6174/tcp	0.000004	
+unknown	6262/tcp	0.000004	
+irc	6667/tcp	0.000004	# Internet Relay Chat
+acnet	6801/tcp	0.000004	# ACNET Control System Protocol
+unknown	6802/tcp	0.000004	
+unknown	6809/tcp	0.000004	
+microtalon-dis	7013/tcp	0.000004	# Microtalon Discovery
+spg	7016/tcp	0.000004	# SPG Controls Carrier
+dpserve	7020/tcp	0.000004	# DP Serve
+watchme-7272	7272/tcp	0.000004	# WatchMe Monitoring 7272
+oma-ilp-s	7277/tcp	0.000004	# OMA Internal Location Secure Protocol
+winqedit	7395/tcp	0.000004	
+unknown	7750/tcp	0.000004	
+accu-lmgr	7781/tcp	0.000004	
+unknown	7895/tcp	0.000004	
+blackice-icecap	8081/tcp	0.000004	# sunproxyadmin | ICECap user console | Sun Proxy Admin Service
+blackice-alerts	8082/tcp	0.000004	# us-cli | BlackIce Alerts sent to this port | Utilistor (Client)
+opsmessaging	8090/tcp	0.000004	# Vehicle to station messaging
+unknown	8094/tcp	0.000004	
+unknown	8878/tcp	0.000004	
+unknown	8879/tcp	0.000004	
+cddbp-alt	8880/tcp	0.000004	# CDDBP
+secure-mqtt	8883/tcp	0.000004	# Secure MQTT
+cslistener	9000/tcp	0.000004	
+tor-orport	9001/tcp	0.000004	# etlservicemgr | Tor ORPort | ETL Service Manager
+unknown	9043/tcp	0.000004	
+CardWeb-IO	9060/tcp	0.000004	# CardWeb-RT | CardWeb request-response I/O exchange | CardWeb realtime device data
+glrpc	9080/tcp	0.000004	# Groove GLRPC
+XmlIpcRegSvc	9092/tcp	0.000004	# Xml-Ipc Server Reg
+jetdirect	9100/tcp	0.000004	# pdl-datastream | hp-pdl-datastr | HP JetDirect card | PDL Data Streaming Port | Printer PDL Data Stream
+jetdirect	9101/tcp	0.000004	# bacula-dir | HP JetDirect card | Bacula Director
+wap-wsp-wtp	9201/tcp	0.000004	# WAP session service
+wap-wsp-s	9202/tcp	0.000004	# WAP secure connectionless session service
+unknown	9352/tcp	0.000004	
+unknown	9353/tcp	0.000004	
+unknown	9354/tcp	0.000004	
+unknown	9383/tcp	0.000004	
+sec-pc2fax-srv	9402/tcp	0.000004	# Samsung PC2FAX for Network Server
+unknown	9403/tcp	0.000004	
+unknown	9405/tcp	0.000004	
+unknown	9406/tcp	0.000004	
+tungsten-https	9443/tcp	0.000004	# WSO2 Tungsten HTTPS
+unknown	9809/tcp	0.000004	
+gt-proxy	9889/tcp	0.000004	# Port for Cable network related data proxy or repeater
+unknown	9906/tcp	0.000004	
+palace-6	9997/tcp	0.000004	
+unknown	10555/tcp	0.000004	
+unknown	10666/tcp	0.000004	
+unknown	11013/tcp	0.000004	
+unknown	12388/tcp	0.000004	
+tsaf	12753/tcp	0.000004	# tsaf port
+unknown	14383/tcp	0.000004	
+unknown	16874/tcp	0.000004	
+unknown	17533/tcp	0.000004	
+unknown	17988/tcp	0.000004	
+opsec-cvp	18181/tcp	0.000004	# Check Point OPSEC | OPSEC CVP
+unknown	18256/tcp	0.000004	
+unknown	18291/tcp	0.000004	
+unknown	20500/tcp	0.000004	
+unknown	20713/tcp	0.000004	
+unknown	24075/tcp	0.000004	
+unknown	24525/tcp	0.000004	
+unknown	25244/tcp	0.000004	
+flexlm4	27004/tcp	0.000004	# FlexLM license manager additional ports
+unknown	28550/tcp	0.000004	
+unknown	30102/tcp	0.000004	
+unknown	30401/tcp	0.000004	
+unknown	30402/tcp	0.000004	
+unknown	30403/tcp	0.000004	
+unknown	30404/tcp	0.000004	
+unknown	30431/tcp	0.000004	
+unknown	30432/tcp	0.000004	
+unknown	30433/tcp	0.000004	
+unknown	30441/tcp	0.000004	
+unknown	30442/tcp	0.000004	
+unknown	30443/tcp	0.000004	
+unknown	30451/tcp	0.000004	
+unknown	30452/tcp	0.000004	
+unknown	30453/tcp	0.000004	
+unknown	30461/tcp	0.000004	
+unknown	30501/tcp	0.000004	
+unknown	30503/tcp	0.000004	
+unknown	30504/tcp	0.000004	
+unknown	30579/tcp	0.000004	
+unknown	31201/tcp	0.000004	
+unknown	31205/tcp	0.000004	
+unknown	31211/tcp	0.000004	
+unknown	31213/tcp	0.000004	
+unknown	31217/tcp	0.000004	
+unknown	31219/tcp	0.000004	
+unknown	31223/tcp	0.000004	
+unknown	31239/tcp	0.000004	
+unknown	31247/tcp	0.000004	
+unknown	31249/tcp	0.000004	
+unknown	31271/tcp	0.000004	
+unknown	31287/tcp	0.000004	
+unknown	31608/tcp	0.000004	
+sometimes-rpc21	32779/tcp	0.000004	# Sometimes an RPC port on my Solaris box
+sometimes-rpc23	32780/tcp	0.000004	# Sometimes an RPC port on my Solaris box
+unknown	32782/tcp	0.000004	
+unknown	32784/tcp	0.000004	
+unknown	32785/tcp	0.000004	
+sometimes-rpc27	32787/tcp	0.000004	# Sometimes an RPC port dmispd (DMI Service Provider)
+unknown	32793/tcp	0.000004	
+unknown	32823/tcp	0.000004	
+unknown	32824/tcp	0.000004	
+unknown	32842/tcp	0.000004	
+unknown	32941/tcp	0.000004	
+unknown	32981/tcp	0.000004	
+unknown	32991/tcp	0.000004	
+unknown	33030/tcp	0.000004	
+unknown	33032/tcp	0.000004	
+unknown	33058/tcp	0.000004	
+unknown	33059/tcp	0.000004	
+unknown	33069/tcp	0.000004	
+unknown	33073/tcp	0.000004	
+unknown	33079/tcp	0.000004	
+unknown	33080/tcp	0.000004	
+unknown	33082/tcp	0.000004	
+unknown	33083/tcp	0.000004	
+unknown	33084/tcp	0.000004	
+unknown	33087/tcp	0.000004	
+unknown	33092/tcp	0.000004	
+unknown	33093/tcp	0.000004	
+unknown	33096/tcp	0.000004	
+unknown	33101/tcp	0.000004	
+unknown	33105/tcp	0.000004	
+unknown	33113/tcp	0.000004	
+unknown	33114/tcp	0.000004	
+unknown	33115/tcp	0.000004	
+unknown	33116/tcp	0.000004	
+unknown	33117/tcp	0.000004	
+unknown	33118/tcp	0.000004	
+unknown	33119/tcp	0.000004	
+unknown	33122/tcp	0.000004	
+unknown	33124/tcp	0.000004	
+unknown	33127/tcp	0.000004	
+unknown	33129/tcp	0.000004	
+unknown	33136/tcp	0.000004	
+unknown	33143/tcp	0.000004	
+unknown	33146/tcp	0.000004	
+unknown	33184/tcp	0.000004	
+unknown	33191/tcp	0.000004	
+unknown	33196/tcp	0.000004	
+unknown	33226/tcp	0.000004	
+unknown	33228/tcp	0.000004	
+unknown	33268/tcp	0.000004	
+unknown	33282/tcp	0.000004	
+unknown	33360/tcp	0.000004	
+unknown	33363/tcp	0.000004	
+unknown	33390/tcp	0.000004	
+unknown	33493/tcp	0.000004	
+unknown	33566/tcp	0.000004	
+unknown	33572/tcp	0.000004	
+unknown	33574/tcp	0.000004	
+unknown	33581/tcp	0.000004	
+unknown	33985/tcp	0.000004	
+unknown	34426/tcp	0.000004	
+unknown	34878/tcp	0.000004	
+unknown	35285/tcp	0.000004	
+unknown	35561/tcp	0.000004	
+unknown	35663/tcp	0.000004	
+unknown	35739/tcp	0.000004	
+unknown	35771/tcp	0.000004	
+unknown	36005/tcp	0.000004	
+unknown	36006/tcp	0.000004	
+unknown	36007/tcp	0.000004	
+unknown	36008/tcp	0.000004	
+unknown	36243/tcp	0.000004	
+unknown	36484/tcp	0.000004	
+unknown	36627/tcp	0.000004	
+unknown	36818/tcp	0.000004	
+unknown	36917/tcp	0.000004	
+unknown	37000/tcp	0.000004	
+unknown	37989/tcp	0.000004	
+unknown	38259/tcp	0.000004	
+unknown	38508/tcp	0.000004	
+unknown	38568/tcp	0.000004	
+unknown	38838/tcp	0.000004	
+unknown	39374/tcp	0.000004	
+unknown	39614/tcp	0.000004	
+unknown	40284/tcp	0.000004	
+unknown	40286/tcp	0.000004	
+unknown	40288/tcp	0.000004	
+unknown	40384/tcp	0.000004	
+unknown	40386/tcp	0.000004	
+unknown	40484/tcp	0.000004	
+unknown	40486/tcp	0.000004	
+unknown	40584/tcp	0.000004	
+unknown	40586/tcp	0.000004	
+unknown	40685/tcp	0.000004	
+unknown	40953/tcp	0.000004	
+unknown	41014/tcp	0.000004	
+unknown	41100/tcp	0.000004	
+unknown	41101/tcp	0.000004	
+unknown	41102/tcp	0.000004	
+unknown	41104/tcp	0.000004	
+unknown	41106/tcp	0.000004	
+unknown	41107/tcp	0.000004	
+unknown	41109/tcp	0.000004	
+unknown	41112/tcp	0.000004	
+unknown	41113/tcp	0.000004	
+unknown	41117/tcp	0.000004	
+unknown	41118/tcp	0.000004	
+unknown	41119/tcp	0.000004	
+unknown	41122/tcp	0.000004	
+unknown	41125/tcp	0.000004	
+unknown	41127/tcp	0.000004	
+unknown	41130/tcp	0.000004	
+unknown	41131/tcp	0.000004	
+unknown	41132/tcp	0.000004	
+unknown	41138/tcp	0.000004	
+unknown	41139/tcp	0.000004	
+unknown	41141/tcp	0.000004	
+unknown	41143/tcp	0.000004	
+unknown	41144/tcp	0.000004	
+unknown	41145/tcp	0.000004	
+unknown	41146/tcp	0.000004	
+unknown	41147/tcp	0.000004	
+unknown	41148/tcp	0.000004	
+unknown	41149/tcp	0.000004	
+unknown	41151/tcp	0.000004	
+unknown	41155/tcp	0.000004	
+unknown	41156/tcp	0.000004	
+unknown	41157/tcp	0.000004	
+unknown	41158/tcp	0.000004	
+unknown	41159/tcp	0.000004	
+unknown	41161/tcp	0.000004	
+unknown	41162/tcp	0.000004	
+unknown	41165/tcp	0.000004	
+unknown	41167/tcp	0.000004	
+unknown	41168/tcp	0.000004	
+unknown	41170/tcp	0.000004	
+unknown	41171/tcp	0.000004	
+unknown	41172/tcp	0.000004	
+unknown	41174/tcp	0.000004	
+unknown	41175/tcp	0.000004	
+unknown	41176/tcp	0.000004	
+unknown	41177/tcp	0.000004	
+unknown	41180/tcp	0.000004	
+unknown	41181/tcp	0.000004	
+unknown	41182/tcp	0.000004	
+unknown	41184/tcp	0.000004	
+unknown	41186/tcp	0.000004	
+unknown	41187/tcp	0.000004	
+unknown	41189/tcp	0.000004	
+unknown	41190/tcp	0.000004	
+unknown	41192/tcp	0.000004	
+unknown	41193/tcp	0.000004	
+unknown	41194/tcp	0.000004	
+unknown	41196/tcp	0.000004	
+unknown	41197/tcp	0.000004	
+unknown	41199/tcp	0.000004	
+unknown	41200/tcp	0.000004	
+unknown	41201/tcp	0.000004	
+unknown	41202/tcp	0.000004	
+unknown	41203/tcp	0.000004	
+unknown	41204/tcp	0.000004	
+unknown	41205/tcp	0.000004	
+unknown	41206/tcp	0.000004	
+unknown	41207/tcp	0.000004	
+unknown	41208/tcp	0.000004	
+unknown	41210/tcp	0.000004	
+unknown	41211/tcp	0.000004	
+unknown	41212/tcp	0.000004	
+unknown	41216/tcp	0.000004	
+unknown	41217/tcp	0.000004	
+unknown	41219/tcp	0.000004	
+unknown	41220/tcp	0.000004	
+unknown	41222/tcp	0.000004	
+unknown	41223/tcp	0.000004	
+unknown	41224/tcp	0.000004	
+unknown	41225/tcp	0.000004	
+unknown	41226/tcp	0.000004	
+unknown	41227/tcp	0.000004	
+unknown	41231/tcp	0.000004	
+unknown	41232/tcp	0.000004	
+unknown	41235/tcp	0.000004	
+unknown	41236/tcp	0.000004	
+unknown	41237/tcp	0.000004	
+unknown	41238/tcp	0.000004	
+unknown	41239/tcp	0.000004	
+unknown	41240/tcp	0.000004	
+unknown	41241/tcp	0.000004	
+unknown	41242/tcp	0.000004	
+unknown	41245/tcp	0.000004	
+unknown	41246/tcp	0.000004	
+unknown	41249/tcp	0.000004	
+unknown	41251/tcp	0.000004	
+unknown	41253/tcp	0.000004	
+unknown	41255/tcp	0.000004	
+unknown	41256/tcp	0.000004	
+unknown	41259/tcp	0.000004	
+unknown	41261/tcp	0.000004	
+unknown	41262/tcp	0.000004	
+unknown	41263/tcp	0.000004	
+unknown	41264/tcp	0.000004	
+unknown	41265/tcp	0.000004	
+unknown	41271/tcp	0.000004	
+unknown	41272/tcp	0.000004	
+unknown	41273/tcp	0.000004	
+unknown	41274/tcp	0.000004	
+unknown	41275/tcp	0.000004	
+unknown	41276/tcp	0.000004	
+unknown	41277/tcp	0.000004	
+unknown	41278/tcp	0.000004	
+unknown	41279/tcp	0.000004	
+unknown	41280/tcp	0.000004	
+unknown	41282/tcp	0.000004	
+unknown	41285/tcp	0.000004	
+unknown	41287/tcp	0.000004	
+unknown	41290/tcp	0.000004	
+unknown	41292/tcp	0.000004	
+unknown	41293/tcp	0.000004	
+unknown	41294/tcp	0.000004	
+unknown	41298/tcp	0.000004	
+unknown	41299/tcp	0.000004	
+unknown	41300/tcp	0.000004	
+unknown	41301/tcp	0.000004	
+unknown	41302/tcp	0.000004	
+unknown	41303/tcp	0.000004	
+unknown	41306/tcp	0.000004	
+unknown	41307/tcp	0.000004	
+unknown	41308/tcp	0.000004	
+unknown	41310/tcp	0.000004	
+unknown	41311/tcp	0.000004	
+unknown	41313/tcp	0.000004	
+unknown	41314/tcp	0.000004	
+unknown	41317/tcp	0.000004	
+unknown	41320/tcp	0.000004	
+unknown	41321/tcp	0.000004	
+unknown	41322/tcp	0.000004	
+unknown	41324/tcp	0.000004	
+unknown	41325/tcp	0.000004	
+unknown	41327/tcp	0.000004	
+unknown	41329/tcp	0.000004	
+unknown	41330/tcp	0.000004	
+unknown	41332/tcp	0.000004	
+unknown	41333/tcp	0.000004	
+unknown	41334/tcp	0.000004	
+unknown	41336/tcp	0.000004	
+unknown	41337/tcp	0.000004	
+unknown	41339/tcp	0.000004	
+unknown	41341/tcp	0.000004	
+unknown	41343/tcp	0.000004	
+unknown	41344/tcp	0.000004	
+unknown	41346/tcp	0.000004	
+unknown	41349/tcp	0.000004	
+unknown	41351/tcp	0.000004	
+unknown	41352/tcp	0.000004	
+unknown	41355/tcp	0.000004	
+unknown	41356/tcp	0.000004	
+unknown	41358/tcp	0.000004	
+unknown	41359/tcp	0.000004	
+unknown	41361/tcp	0.000004	
+unknown	41363/tcp	0.000004	
+unknown	41366/tcp	0.000004	
+unknown	41367/tcp	0.000004	
+unknown	41369/tcp	0.000004	
+unknown	41371/tcp	0.000004	
+unknown	41372/tcp	0.000004	
+unknown	41373/tcp	0.000004	
+unknown	41375/tcp	0.000004	
+unknown	41376/tcp	0.000004	
+unknown	41377/tcp	0.000004	
+unknown	41378/tcp	0.000004	
+unknown	41379/tcp	0.000004	
+unknown	41380/tcp	0.000004	
+unknown	41381/tcp	0.000004	
+unknown	41382/tcp	0.000004	
+unknown	41383/tcp	0.000004	
+unknown	41384/tcp	0.000004	
+unknown	41385/tcp	0.000004	
+unknown	41387/tcp	0.000004	
+unknown	41388/tcp	0.000004	
+unknown	41389/tcp	0.000004	
+unknown	41390/tcp	0.000004	
+unknown	41391/tcp	0.000004	
+unknown	41392/tcp	0.000004	
+unknown	41393/tcp	0.000004	
+unknown	41396/tcp	0.000004	
+unknown	41397/tcp	0.000004	
+unknown	41400/tcp	0.000004	
+unknown	41402/tcp	0.000004	
+unknown	41403/tcp	0.000004	
+unknown	41404/tcp	0.000004	
+unknown	41407/tcp	0.000004	
+unknown	41408/tcp	0.000004	
+unknown	41410/tcp	0.000004	
+unknown	41411/tcp	0.000004	
+unknown	41412/tcp	0.000004	
+unknown	41415/tcp	0.000004	
+unknown	41416/tcp	0.000004	
+unknown	41417/tcp	0.000004	
+unknown	41421/tcp	0.000004	
+unknown	41422/tcp	0.000004	
+unknown	41425/tcp	0.000004	
+unknown	41426/tcp	0.000004	
+unknown	41427/tcp	0.000004	
+unknown	41428/tcp	0.000004	
+unknown	41429/tcp	0.000004	
+unknown	41430/tcp	0.000004	
+unknown	41433/tcp	0.000004	
+unknown	41434/tcp	0.000004	
+unknown	41439/tcp	0.000004	
+unknown	41440/tcp	0.000004	
+unknown	41441/tcp	0.000004	
+unknown	41443/tcp	0.000004	
+unknown	41444/tcp	0.000004	
+unknown	41445/tcp	0.000004	
+unknown	41446/tcp	0.000004	
+unknown	41447/tcp	0.000004	
+unknown	41450/tcp	0.000004	
+unknown	41451/tcp	0.000004	
+unknown	41452/tcp	0.000004	
+unknown	41453/tcp	0.000004	
+unknown	41454/tcp	0.000004	
+unknown	41455/tcp	0.000004	
+unknown	41456/tcp	0.000004	
+unknown	41457/tcp	0.000004	
+unknown	41458/tcp	0.000004	
+unknown	41459/tcp	0.000004	
+unknown	41460/tcp	0.000004	
+unknown	41461/tcp	0.000004	
+unknown	41462/tcp	0.000004	
+unknown	41463/tcp	0.000004	
+unknown	41464/tcp	0.000004	
+unknown	41468/tcp	0.000004	
+unknown	41469/tcp	0.000004	
+unknown	41470/tcp	0.000004	
+unknown	41472/tcp	0.000004	
+unknown	41473/tcp	0.000004	
+unknown	41474/tcp	0.000004	
+unknown	41475/tcp	0.000004	
+unknown	41476/tcp	0.000004	
+unknown	41477/tcp	0.000004	
+unknown	41478/tcp	0.000004	
+unknown	41479/tcp	0.000004	
+unknown	41480/tcp	0.000004	
+unknown	41483/tcp	0.000004	
+unknown	41485/tcp	0.000004	
+unknown	41486/tcp	0.000004	
+unknown	41488/tcp	0.000004	
+unknown	41489/tcp	0.000004	
+unknown	41491/tcp	0.000004	
+unknown	41492/tcp	0.000004	
+unknown	41493/tcp	0.000004	
+unknown	41494/tcp	0.000004	
+unknown	41495/tcp	0.000004	
+unknown	41496/tcp	0.000004	
+unknown	41497/tcp	0.000004	
+unknown	41498/tcp	0.000004	
+unknown	41499/tcp	0.000004	
+unknown	41501/tcp	0.000004	
+unknown	41503/tcp	0.000004	
+unknown	41504/tcp	0.000004	
+unknown	41505/tcp	0.000004	
+unknown	41507/tcp	0.000004	
+unknown	41509/tcp	0.000004	
+unknown	41510/tcp	0.000004	
+unknown	41512/tcp	0.000004	
+unknown	41513/tcp	0.000004	
+unknown	41516/tcp	0.000004	
+unknown	41517/tcp	0.000004	
+unknown	41519/tcp	0.000004	
+unknown	41520/tcp	0.000004	
+unknown	41521/tcp	0.000004	
+unknown	41522/tcp	0.000004	
+unknown	41524/tcp	0.000004	
+unknown	41525/tcp	0.000004	
+unknown	41530/tcp	0.000004	
+unknown	41532/tcp	0.000004	
+unknown	41533/tcp	0.000004	
+unknown	41535/tcp	0.000004	
+unknown	41536/tcp	0.000004	
+unknown	41537/tcp	0.000004	
+unknown	41538/tcp	0.000004	
+unknown	41539/tcp	0.000004	
+unknown	41540/tcp	0.000004	
+unknown	41542/tcp	0.000004	
+unknown	41543/tcp	0.000004	
+unknown	41545/tcp	0.000004	
+unknown	41547/tcp	0.000004	
+unknown	41548/tcp	0.000004	
+unknown	41550/tcp	0.000004	
+unknown	41552/tcp	0.000004	
+unknown	41553/tcp	0.000004	
+unknown	41554/tcp	0.000004	
+unknown	41555/tcp	0.000004	
+unknown	41557/tcp	0.000004	
+unknown	41558/tcp	0.000004	
+unknown	41559/tcp	0.000004	
+unknown	41561/tcp	0.000004	
+unknown	41562/tcp	0.000004	
+unknown	41563/tcp	0.000004	
+unknown	41564/tcp	0.000004	
+unknown	41565/tcp	0.000004	
+unknown	41566/tcp	0.000004	
+unknown	41567/tcp	0.000004	
+unknown	41569/tcp	0.000004	
+unknown	41570/tcp	0.000004	
+unknown	41571/tcp	0.000004	
+unknown	41574/tcp	0.000004	
+unknown	41577/tcp	0.000004	
+unknown	41578/tcp	0.000004	
+unknown	41579/tcp	0.000004	
+unknown	41580/tcp	0.000004	
+unknown	41581/tcp	0.000004	
+unknown	41583/tcp	0.000004	
+unknown	41584/tcp	0.000004	
+unknown	41585/tcp	0.000004	
+unknown	41586/tcp	0.000004	
+unknown	41587/tcp	0.000004	
+unknown	41593/tcp	0.000004	
+unknown	41594/tcp	0.000004	
+unknown	41595/tcp	0.000004	
+unknown	41596/tcp	0.000004	
+unknown	41597/tcp	0.000004	
+unknown	41599/tcp	0.000004	
+unknown	41600/tcp	0.000004	
+unknown	41601/tcp	0.000004	
+unknown	41602/tcp	0.000004	
+unknown	41603/tcp	0.000004	
+unknown	41604/tcp	0.000004	
+unknown	41605/tcp	0.000004	
+unknown	41606/tcp	0.000004	
+unknown	41607/tcp	0.000004	
+unknown	41610/tcp	0.000004	
+unknown	41611/tcp	0.000004	
+unknown	41612/tcp	0.000004	
+unknown	41613/tcp	0.000004	
+unknown	41616/tcp	0.000004	
+unknown	41618/tcp	0.000004	
+unknown	41619/tcp	0.000004	
+unknown	41621/tcp	0.000004	
+unknown	41623/tcp	0.000004	
+unknown	41624/tcp	0.000004	
+unknown	41625/tcp	0.000004	
+unknown	41628/tcp	0.000004	
+unknown	41630/tcp	0.000004	
+unknown	41631/tcp	0.000004	
+unknown	41635/tcp	0.000004	
+unknown	41636/tcp	0.000004	
+unknown	41637/tcp	0.000004	
+unknown	41638/tcp	0.000004	
+unknown	41639/tcp	0.000004	
+unknown	41640/tcp	0.000004	
+unknown	41641/tcp	0.000004	
+unknown	41644/tcp	0.000004	
+unknown	41645/tcp	0.000004	
+unknown	41647/tcp	0.000004	
+unknown	41651/tcp	0.000004	
+unknown	41652/tcp	0.000004	
+unknown	41653/tcp	0.000004	
+unknown	41655/tcp	0.000004	
+unknown	41656/tcp	0.000004	
+unknown	41657/tcp	0.000004	
+unknown	41661/tcp	0.000004	
+unknown	41662/tcp	0.000004	
+unknown	41664/tcp	0.000004	
+unknown	41665/tcp	0.000004	
+unknown	41666/tcp	0.000004	
+unknown	41667/tcp	0.000004	
+unknown	41668/tcp	0.000004	
+unknown	41670/tcp	0.000004	
+unknown	41673/tcp	0.000004	
+unknown	41674/tcp	0.000004	
+unknown	41677/tcp	0.000004	
+unknown	41679/tcp	0.000004	
+unknown	41680/tcp	0.000004	
+unknown	41681/tcp	0.000004	
+unknown	41683/tcp	0.000004	
+unknown	41684/tcp	0.000004	
+unknown	41685/tcp	0.000004	
+unknown	41687/tcp	0.000004	
+unknown	41688/tcp	0.000004	
+unknown	41690/tcp	0.000004	
+unknown	41691/tcp	0.000004	
+unknown	41692/tcp	0.000004	
+unknown	41694/tcp	0.000004	
+unknown	41695/tcp	0.000004	
+unknown	41696/tcp	0.000004	
+unknown	41697/tcp	0.000004	
+unknown	41700/tcp	0.000004	
+unknown	41701/tcp	0.000004	
+unknown	41702/tcp	0.000004	
+unknown	41703/tcp	0.000004	
+unknown	41704/tcp	0.000004	
+unknown	41707/tcp	0.000004	
+unknown	41708/tcp	0.000004	
+unknown	41712/tcp	0.000004	
+unknown	41713/tcp	0.000004	
+unknown	41715/tcp	0.000004	
+unknown	41716/tcp	0.000004	
+unknown	41719/tcp	0.000004	
+unknown	41722/tcp	0.000004	
+unknown	41723/tcp	0.000004	
+unknown	41724/tcp	0.000004	
+unknown	41725/tcp	0.000004	
+unknown	41727/tcp	0.000004	
+unknown	41728/tcp	0.000004	
+unknown	41730/tcp	0.000004	
+unknown	41731/tcp	0.000004	
+unknown	41732/tcp	0.000004	
+unknown	41735/tcp	0.000004	
+unknown	41736/tcp	0.000004	
+unknown	41737/tcp	0.000004	
+unknown	41739/tcp	0.000004	
+unknown	41740/tcp	0.000004	
+unknown	41741/tcp	0.000004	
+unknown	41744/tcp	0.000004	
+unknown	41745/tcp	0.000004	
+unknown	41747/tcp	0.000004	
+unknown	41749/tcp	0.000004	
+unknown	41750/tcp	0.000004	
+unknown	41751/tcp	0.000004	
+unknown	41753/tcp	0.000004	
+unknown	41754/tcp	0.000004	
+unknown	41755/tcp	0.000004	
+unknown	41757/tcp	0.000004	
+unknown	41758/tcp	0.000004	
+unknown	41760/tcp	0.000004	
+unknown	41761/tcp	0.000004	
+unknown	41762/tcp	0.000004	
+unknown	41763/tcp	0.000004	
+unknown	41767/tcp	0.000004	
+unknown	41768/tcp	0.000004	
+unknown	41769/tcp	0.000004	
+unknown	41770/tcp	0.000004	
+unknown	41771/tcp	0.000004	
+unknown	41772/tcp	0.000004	
+unknown	41774/tcp	0.000004	
+unknown	41775/tcp	0.000004	
+unknown	41776/tcp	0.000004	
+unknown	41777/tcp	0.000004	
+unknown	41778/tcp	0.000004	
+unknown	41779/tcp	0.000004	
+unknown	41782/tcp	0.000004	
+unknown	41784/tcp	0.000004	
+unknown	41785/tcp	0.000004	
+unknown	41787/tcp	0.000004	
+unknown	41789/tcp	0.000004	
+crestron-cips	41796/tcp	0.000004	# Crestron Secure Control Port
+crestron-ctps	41797/tcp	0.000004	# Crestron Secure Terminal Port
+unknown	41798/tcp	0.000004	
+unknown	41799/tcp	0.000004	
+unknown	41800/tcp	0.000004	
+unknown	41802/tcp	0.000004	
+unknown	41803/tcp	0.000004	
+unknown	41804/tcp	0.000004	
+unknown	41806/tcp	0.000004	
+unknown	41807/tcp	0.000004	
+unknown	41809/tcp	0.000004	
+unknown	41812/tcp	0.000004	
+unknown	41814/tcp	0.000004	
+unknown	41815/tcp	0.000004	
+unknown	41816/tcp	0.000004	
+unknown	41818/tcp	0.000004	
+unknown	41819/tcp	0.000004	
+unknown	41821/tcp	0.000004	
+unknown	41822/tcp	0.000004	
+unknown	41823/tcp	0.000004	
+unknown	41826/tcp	0.000004	
+unknown	41829/tcp	0.000004	
+unknown	41830/tcp	0.000004	
+unknown	41831/tcp	0.000004	
+unknown	41833/tcp	0.000004	
+unknown	41834/tcp	0.000004	
+unknown	41835/tcp	0.000004	
+unknown	41836/tcp	0.000004	
+unknown	41837/tcp	0.000004	
+unknown	41840/tcp	0.000004	
+unknown	41841/tcp	0.000004	
+unknown	41842/tcp	0.000004	
+unknown	41843/tcp	0.000004	
+unknown	41844/tcp	0.000004	
+unknown	41846/tcp	0.000004	
+unknown	41847/tcp	0.000004	
+unknown	41849/tcp	0.000004	
+unknown	41851/tcp	0.000004	
+unknown	41852/tcp	0.000004	
+unknown	41853/tcp	0.000004	
+unknown	41854/tcp	0.000004	
+unknown	41855/tcp	0.000004	
+unknown	41856/tcp	0.000004	
+unknown	41858/tcp	0.000004	
+unknown	41862/tcp	0.000004	
+unknown	41863/tcp	0.000004	
+unknown	41865/tcp	0.000004	
+unknown	41866/tcp	0.000004	
+unknown	41868/tcp	0.000004	
+unknown	41869/tcp	0.000004	
+unknown	41870/tcp	0.000004	
+unknown	41871/tcp	0.000004	
+unknown	41872/tcp	0.000004	
+unknown	41873/tcp	0.000004	
+unknown	41874/tcp	0.000004	
+unknown	41875/tcp	0.000004	
+unknown	41878/tcp	0.000004	
+unknown	41879/tcp	0.000004	
+unknown	41881/tcp	0.000004	
+unknown	41882/tcp	0.000004	
+unknown	41883/tcp	0.000004	
+unknown	41889/tcp	0.000004	
+unknown	41891/tcp	0.000004	
+unknown	41892/tcp	0.000004	
+unknown	41893/tcp	0.000004	
+unknown	41895/tcp	0.000004	
+unknown	41896/tcp	0.000004	
+unknown	41897/tcp	0.000004	
+unknown	41900/tcp	0.000004	
+unknown	41901/tcp	0.000004	
+unknown	41904/tcp	0.000004	
+unknown	41905/tcp	0.000004	
+unknown	41907/tcp	0.000004	
+unknown	41908/tcp	0.000004	
+unknown	41909/tcp	0.000004	
+unknown	41910/tcp	0.000004	
+unknown	41911/tcp	0.000004	
+unknown	41912/tcp	0.000004	
+unknown	41914/tcp	0.000004	
+unknown	41915/tcp	0.000004	
+unknown	41917/tcp	0.000004	
+unknown	41919/tcp	0.000004	
+unknown	41922/tcp	0.000004	
+unknown	41923/tcp	0.000004	
+unknown	41925/tcp	0.000004	
+unknown	41926/tcp	0.000004	
+unknown	41928/tcp	0.000004	
+unknown	41929/tcp	0.000004	
+unknown	41930/tcp	0.000004	
+unknown	41931/tcp	0.000004	
+unknown	41932/tcp	0.000004	
+unknown	41935/tcp	0.000004	
+unknown	41936/tcp	0.000004	
+unknown	41937/tcp	0.000004	
+unknown	41938/tcp	0.000004	
+unknown	41942/tcp	0.000004	
+unknown	41943/tcp	0.000004	
+unknown	41944/tcp	0.000004	
+unknown	41947/tcp	0.000004	
+unknown	41949/tcp	0.000004	
+unknown	41950/tcp	0.000004	
+unknown	41953/tcp	0.000004	
+unknown	41954/tcp	0.000004	
+unknown	41955/tcp	0.000004	
+unknown	41956/tcp	0.000004	
+unknown	41957/tcp	0.000004	
+unknown	41959/tcp	0.000004	
+unknown	41960/tcp	0.000004	
+unknown	41961/tcp	0.000004	
+unknown	41962/tcp	0.000004	
+unknown	41963/tcp	0.000004	
+unknown	41965/tcp	0.000004	
+unknown	41966/tcp	0.000004	
+unknown	41967/tcp	0.000004	
+unknown	41969/tcp	0.000004	
+unknown	41971/tcp	0.000004	
+unknown	41973/tcp	0.000004	
+unknown	41974/tcp	0.000004	
+unknown	41975/tcp	0.000004	
+unknown	41976/tcp	0.000004	
+unknown	41978/tcp	0.000004	
+unknown	41979/tcp	0.000004	
+unknown	41980/tcp	0.000004	
+unknown	41981/tcp	0.000004	
+unknown	41982/tcp	0.000004	
+unknown	41983/tcp	0.000004	
+unknown	41984/tcp	0.000004	
+unknown	41985/tcp	0.000004	
+unknown	41986/tcp	0.000004	
+unknown	41987/tcp	0.000004	
+unknown	41988/tcp	0.000004	
+unknown	41989/tcp	0.000004	
+unknown	41991/tcp	0.000004	
+unknown	41992/tcp	0.000004	
+unknown	41994/tcp	0.000004	
+unknown	41995/tcp	0.000004	
+unknown	41997/tcp	0.000004	
+unknown	41998/tcp	0.000004	
+unknown	42155/tcp	0.000004	
+unknown	42190/tcp	0.000004	
+unknown	42263/tcp	0.000004	
+unknown	42676/tcp	0.000004	
+unknown	43027/tcp	0.000004	
+unknown	43059/tcp	0.000004	
+unknown	43141/tcp	0.000004	
+unknown	43193/tcp	0.000004	
+unknown	43243/tcp	0.000004	
+unknown	43583/tcp	0.000004	
+unknown	43648/tcp	0.000004	
+unknown	43821/tcp	0.000004	
+unknown	43940/tcp	0.000004	
+unknown	44211/tcp	0.000004	
+coldfusion-auth	44443/tcp	0.000004	# ColdFusion Advanced Security/Siteminder Authentication Port (by Allaire/Netegrity)
+unknown	44554/tcp	0.000004	
+unknown	44853/tcp	0.000004	
+unknown	45215/tcp	0.000004	
+unknown	45429/tcp	0.000004	
+unknown	45629/tcp	0.000004	
+unknown	46222/tcp	0.000004	
+unknown	46409/tcp	0.000004	
+unknown	46611/tcp	0.000004	
+unknown	46637/tcp	0.000004	
+unknown	46977/tcp	0.000004	
+unknown	47742/tcp	0.000004	
+unknown	47873/tcp	0.000004	
+unknown	47924/tcp	0.000004	
+unknown	48300/tcp	0.000004	
+unknown	48302/tcp	0.000004	
+unknown	48304/tcp	0.000004	
+unknown	48313/tcp	0.000004	
+unknown	48314/tcp	0.000004	
+unknown	48323/tcp	0.000004	
+unknown	48337/tcp	0.000004	
+unknown	48339/tcp	0.000004	
+unknown	48340/tcp	0.000004	
+unknown	48361/tcp	0.000004	
+unknown	48369/tcp	0.000004	
+unknown	48373/tcp	0.000004	
+unknown	48383/tcp	0.000004	
+unknown	48400/tcp	0.000004	
+unknown	48401/tcp	0.000004	
+unknown	48690/tcp	0.000004	
+unknown	48835/tcp	0.000004	
+unknown	48999/tcp	0.000004	
+unknown	49016/tcp	0.000004	
+unknown	49018/tcp	0.000004	
+unknown	49019/tcp	0.000004	
+unknown	49020/tcp	0.000004	
+unknown	49159/tcp	0.000004	
+unknown	49165/tcp	0.000004	
+unknown	49186/tcp	0.000004	
+unknown	49194/tcp	0.000004	
+unknown	49240/tcp	0.000004	
+unknown	49443/tcp	0.000004	
+unknown	49501/tcp	0.000004	
+unknown	49512/tcp	0.000004	
+ibm-db2	50000/tcp	0.000004	# (also Internet/Intranet Input Method Server Framework?)
+unknown	50346/tcp	0.000004	
+unknown	52289/tcp	0.000004	
+unknown	53640/tcp	0.000004	
+unknown	53842/tcp	0.000004	
+unknown	53856/tcp	0.000004	
+unknown	53864/tcp	0.000004	
+unknown	53981/tcp	0.000004	
+unknown	53982/tcp	0.000004	
+unknown	53985/tcp	0.000004	
+unknown	54617/tcp	0.000004	
+unknown	54631/tcp	0.000004	
+unknown	54722/tcp	0.000004	
+unknown	55094/tcp	0.000004	
+unknown	55726/tcp	0.000004	
+unknown	55741/tcp	0.000004	
+unknown	55755/tcp	0.000004	
+unknown	55784/tcp	0.000004	
+unknown	56262/tcp	0.000004	
+unknown	56566/tcp	0.000004	
+unknown	56817/tcp	0.000004	
+unknown	57305/tcp	0.000004	
+unknown	58109/tcp	0.000004	
+unknown	58182/tcp	0.000004	
+unknown	58567/tcp	0.000004	
+unknown	58888/tcp	0.000004	
+unknown	59110/tcp	0.000004	
+unknown	59527/tcp	0.000004	
+unknown	60754/tcp	0.000004	
+unknown	60828/tcp	0.000004	
+unknown	60956/tcp	0.000004	
+unknown	61098/tcp	0.000004	
+unknown	61393/tcp	0.000004	
+unknown	61893/tcp	0.000004	
+unknown	62091/tcp	0.000004	
+unknown	62909/tcp	0.000004	
+unknown	64100/tcp	0.000004	
+unknown	64579/tcp	0.000004	
+unknown	64599/tcp	0.000004	
+unknown	65000/tcp	0.000004	
+unknown	65308/tcp	0.000004	
