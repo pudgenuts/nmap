@@ -8,6 +8,7 @@ local stdnse = require "stdnse"
 local string = require "string"
 local table = require "table"
 
+
 description = [[The script is used to fetch just the default index file from a server 
 
 ]]
@@ -54,13 +55,19 @@ function table2String(table)
 end
 
 local function fetchPage(host, port, url, output)
-  local response = http.get(host, port, url, nil)
+
+   local response = http.get(host, port, url, nil)
+   if response.location[1] then 
+	URL = response.location[1]
+   else 
+        URL = url 
+   end 
+
 
   body = ""
   local LEN = 0
   if response and response.status and response.status == 200 then
-        print("sucess")
-        print(response.status);
+        print("sucess rc: "..response.status);
 	LEN = tonumber(response.header["content-length"])
         body = response.body
   elseif response and response.status and response.status == 404 then
@@ -72,11 +79,7 @@ local function fetchPage(host, port, url, output)
         body = "no data returned"
   end
   stdnse.debug3("body:", body)
-  
-
- return body
-
-
+ return URL, body
 end
 
 action = function(host, port)
@@ -86,12 +89,14 @@ action = function(host, port)
 
   local output = stdnse.output_table()
   local patterns = {}
-  body = fetchPage(host, port, url, output)
-  javascript = {}
-  append = 0
-  array = {}
+  local URL, body = fetchPage(host, port, url, output)
+  local javascript = {}
+  local APPEND = 0
+  local array = {}
   
   for line in body:gmatch("([^\n]*)\n?") do
+        stdnse.debug1("debug> %s", line)
+	
         if ( (string.match(line,"<script"))  and ( string.match(line,"http")  ) ) then
                 APPEND = 0; 
         elseif (string.match(line,"<script"))  then
@@ -106,6 +111,9 @@ action = function(host, port)
                 table.insert(array,line)
         end
   end
-  return javascript
+
+  local returnValue = "found "..#javascript.." scripts in page "..URL
+  return returnValue 
+  -- return javascript
 
 end
