@@ -29,18 +29,16 @@ portrule = shortport.http
 
 
 local function fetchPage(host, port, url, output)
-  local response = http.get(host, port, url, nil)
+   local response = http.get(host, port, url, nil)
+   local URL = "/"
    if response.location[1] then 
         URL = response.location[1]
-   else 
-        URL = url 
    end 
 
   body = ""
   local LEN = 0
   if response and response.status and response.status == 200 then
-        print("sucess")
-        print(response.status);
+        print("sucess rc: "..response.status)
 	LEN = tonumber(response.header["content-length"])
         body = response.body
   elseif response and response.status and response.status == 404 then
@@ -52,7 +50,6 @@ local function fetchPage(host, port, url, output)
         body = "no data returned"
   end
   stdnse.debug3("body:", body)
-  
 
  return URL, body
 
@@ -67,18 +64,37 @@ action = function(host, port)
   local output = stdnse.output_table()
   local patterns = {}
   local URL, body = fetchPage(host, port, url, output)
-  javascript = {}
+  local javascript = {}
 
   for line in body:gmatch("([^\n]*)\n?") do
 	if ((string.match(line,"<script")) and (string.match(line, "src=\""))) then
-		local extracted = string.match(line, "src=\"(.*)\" ")
-		if string.match(extracted, "http") then 
-			print(extracted)
-			table.insert(javascript, extracted)
+		local extracted = string.match(line, 'src="(.*)%"')
+		if string.match(extracted, "^http") then 
+        		-- stdnse.debug1("before: %s ", extracted)
+			extracted = extracted:gsub("\".*", "")
+        		-- stdnse.debug1("after: %s ", extracted)
+			table.insert(javascript, extracted.." url: "..URL)
 		end
 	end 
    end
 
-  return javascript
+   -- print(#javascript)
+
+  local result = {}
+  result = stdnse.output_table()
+  result["URL"] = URL
+
+  if #javascript == 0  then
+	print("no remote javascript found")
+	table.insert(javascript, "no remote javascript found")
+  else  
+  	result["count"] = #javascript
+  end 
+  result["javascript"] = javascript
+
+  -- local returnValue = "found "..#javascript.." scripts in page "..URL
+  --   return result
+	
+  return result
 
 end
