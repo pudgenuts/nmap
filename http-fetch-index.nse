@@ -30,8 +30,13 @@ portrule = shortport.http
 
 local function fetchPage(host, port, url, output)
   local response = http.get(host, port, url, nil)
+   if response.location[1] then 
+        URL = response.location[1]
+   else 
+	URL = url 
+   end 
 
-  body = "><"
+  local body = ""
   local LEN = 0
   if response and response.status and response.status == 200 then
         print("sucess")
@@ -47,7 +52,7 @@ local function fetchPage(host, port, url, output)
         body = "no data returned"
   end
 
- return body
+ return URL, body
 
 
 end
@@ -60,27 +65,7 @@ action = function(host, port)
   local output = stdnse.output_table()
   local patterns = {}
 
-  -- if paths then
-    -- if type(paths) ~= 'table' then
-      -- paths = {paths}
-    -- end
-    -- for _, path in pairs(paths) do
-      -- if path:sub(1, 1) == "/" then
-        -- fetch(host, port, url, destination, path, output)
-      -- else
-        -- table.insert(patterns, path)
-      -- end
-    -- end
-    -- if #patterns > 0 then
-      -- fetch_recursively(host, port, url, destination, patterns, output)
-    -- end
-  -- else
-    -- fetch_recursively(host, port, url, destination, nil, output)
-    body = fetchPage(host, port, url, output)
-  -- end
-
-
-
+  local URL, body = fetchPage(host, port, url, output)
   return body
 
 end
