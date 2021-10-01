@@ -30,6 +30,11 @@ portrule = shortport.http
 
 local function fetchPage(host, port, url, output)
   local response = http.get(host, port, url, nil)
+   if response.location[1] then 
+        URL = response.location[1]
+   else 
+        URL = url 
+   end 
 
   body = ""
   local LEN = 0
@@ -49,7 +54,7 @@ local function fetchPage(host, port, url, output)
   stdnse.debug3("body:", body)
   
 
- return body
+ return URL, body
 
 
 end
@@ -61,7 +66,7 @@ action = function(host, port)
 
   local output = stdnse.output_table()
   local patterns = {}
-  body = fetchPage(host, port, url, output)
+  local URL, body = fetchPage(host, port, url, output)
   javascript = {}
 
   for line in body:gmatch("([^\n]*)\n?") do
