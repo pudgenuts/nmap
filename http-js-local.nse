@@ -28,6 +28,18 @@ categories = {"safe"}
 
 portrule = shortport.http
 
+function ltrim(s)
+  return (s:gsub("^%s*", ""))
+end
+
+-- remove trailing whitespace from string.
+-- http://en.wikipedia.org/wiki/Trim_(programming)
+function rtrim(s)
+  local n = #s
+  while n > 0 and s:find("^%s", n) do n = n - 1 end
+  return s:sub(1, n)
+end
+
 function table2String(table)
    local index = 1
    local holder = ""
@@ -59,8 +71,6 @@ local function fetchPage(host, port, url, output)
    local response = http.get(host, port, url, nil)
    if response.location[1] then 
 	URL = response.location[1]
-   else 
-        URL = url 
    end 
 
 
@@ -96,6 +106,8 @@ action = function(host, port)
   
   for line in body:gmatch("([^\n]*)\n?") do
         stdnse.debug1("debug> %s", line)
+	line = ltrim(line)
+	line = rtrim(line)
 	
         if ( (string.match(line,"<script"))  and ( string.match(line,"http")  ) ) then
                 APPEND = 0; 
@@ -112,8 +124,14 @@ action = function(host, port)
         end
   end
 
-  local returnValue = "found "..#javascript.." scripts in page "..URL
-  return returnValue 
+  local result = {}
+  result = stdnse.output_table()
+  result["URL"] = URL
+  result["count"] = #javascript
+  result["javascript"] = javascript
+
+  -- local returnValue = "found "..#javascript.." scripts in page "..URL
+  return result
   -- return javascript
 
 end
