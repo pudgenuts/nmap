@@ -30,11 +30,16 @@ portrule = shortport.http
 
 local function fetchPage(host, port, url, output)
   local response = http.get(host, port, url, nil)
-   if response.location[1] then 
-        URL = response.location[1]
+   if response.location == nil then 
+           URL = url 
    else 
-	URL = url 
+           if (response.location[1]) then 
+                   URL = response.location[1] 
+           else 
+                   URL = url 
+           end 
    end 
+
 
   local body = ""
   local LEN = 0
@@ -66,6 +71,14 @@ action = function(host, port)
   local patterns = {}
 
   local URL, body = fetchPage(host, port, url, output)
-  return body
+  md5 = stdnse.tohex(openssl.md5(body))
+
+  local result = {}
+  result = stdnse.output_table()
+  result["URL"] = URL
+  result["md5sum"] = md5
+  result["html"] = body
+
+  return result
 
 end
