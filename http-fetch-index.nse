@@ -8,7 +8,9 @@ local stdnse = require "stdnse"
 local string = require "string"
 local table = require "table"
 
-description = [[The script is used to fetch just the default index file from a server 
+description = [[The script is used to fetch just the default index page 
+and compute an MD5 sum for the returned HTML, will also return any URL 
+for a an allowed redirect
 
 ]]
 
@@ -16,15 +18,17 @@ description = [[The script is used to fetch just the default index file from a s
 -- @usage nmap --script http-fetch <target>
 --
 -- @output
--- | http-fetch-index: <html> ... </html>
+-- | http-fetch-index:
+-- |   URL: /
+-- |   md5sum: 5db4fa93a1f7b28c117939af8ee91344
+-- |   html:
+-- | <HTML> ....
+-- | </HTML>
 --
 
 author = "Paul M Johnson inspire by code for http-fetch by Gyanendra Mishra)"
-
 license = "Same as Nmap--See https://nmap.org/book/man-legal.html"
-
 categories = {"safe"}
-
 portrule = shortport.http
 
 
