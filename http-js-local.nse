@@ -69,10 +69,15 @@ end
 local function fetchPage(host, port, url, output)
 
    local response = http.get(host, port, url, nil)
-   if response.location[1] then 
-	URL = response.location[1]
-   end 
-
+      if response.location == nil then
+           URL = url
+   else
+           if (response.location[1]) then
+                   URL = response.location[1]
+           else
+                   URL = url
+           end
+   end
 
   body = ""
   local LEN = 0
