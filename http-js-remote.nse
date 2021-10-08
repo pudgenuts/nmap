@@ -72,6 +72,12 @@ action = function(host, port)
   local URL, body = fetchPage(host, port, url, output)
   local javascript = {}
 
+  if ( string.find(body, "<script") ) then 
+          string.gsub(body, "<script", "\n<script") 
+  end
+
+
+  -- for line in modifiedBody:gmatch("([^\n]*)\n?") do
   for line in body:gmatch("([^\n]*)\n?") do
 	if ((string.match(line,"<script")) and (string.match(line, "src=\""))) then
 		local extracted = string.match(line, 'src="(.*)%"')

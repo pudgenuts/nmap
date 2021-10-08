@@ -109,6 +109,12 @@ action = function(host, port)
   local APPEND = 0
   local array = {}
   
+  -- local modifiedBody =  body:gsub("%<script", "%\n<script")
+  if ( string.find(body, "<script") ) then 
+          string.gsub(body, "<script", "\n<script") 
+  end
+
+  -- for line in modifiedBody:gmatch("([^\n]*)\n?") do
   for line in body:gmatch("([^\n]*)\n?") do
         stdnse.debug1("debug> %s", line)
 	line = ltrim(line)
