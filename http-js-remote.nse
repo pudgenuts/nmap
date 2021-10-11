@@ -44,14 +44,14 @@ local function fetchPage(host, port, url, output)
   body = ""
   local LEN = 0
   if response and response.status and response.status == 200 then
-        print("sucess rc: "..response.status)
+        stdnse.debug3("sucess rc: "..response.status)
 	LEN = tonumber(response.header["content-length"])
         body = response.body
   elseif response and response.status and response.status == 404 then
-        print("strong bad says \"404ed!!!\"")
+        stdnse.debug3("strong bad says \"404ed!!!\"")
 	LEN = tonumber(response.header["content-length"])
   else
-        print("failure:  => (",LEN,")")
+        stdnse.debug3("failure:  => (",LEN,")")
         stdnse.debug3("%s doesn't exist", url)
         body = "no data returned"
   end
