@@ -33,12 +33,12 @@ portrule = shortport.http
 local function fetch2(host, port, url, output)
   local response = http.get(host, port, url, nil)
   if response and response.status and response.status == 200 then
-        print("sucess")
+        stdnse.debug3("sucess")
         body = response.body
   else
     stdnse.debug1("HTTP code 403")
     body = "HTTP code "..response.status
-    print(body)
+    stdnse.debug3(body)
   end
 
  return body
@@ -51,12 +51,10 @@ local function fetchPage(host, port, url, output)
 
   body = "><"
   if response and response.status and response.status == 200 then
-        print("sucess")
-        print(response.status);
+        stdnse.debug3("sucess %s",response.status);
         body = response.body
   else
-        print("failure:")
-        print(response.status);
+        
         stdnse.debug3("%s doesn't exist", url)
         body = response.header
   end
