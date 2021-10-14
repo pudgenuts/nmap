@@ -97,7 +97,7 @@ action = function(host, port)
   result["URL"] = URL
 
   if #javascript == 0  then
-	print("no remote javascript found")
+	-- print("no remote javascript found")
 	table.insert(javascript, "no remote javascript found")
   else  
   	result["count"] = #javascript
