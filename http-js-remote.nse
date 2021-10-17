@@ -73,18 +73,17 @@ action = function(host, port)
   local javascript = {}
 
   if ( string.find(body, "<script") ) then 
-          string.gsub(body, "<script", "\n<script") 
+          modifiedBody = string.gsub(body, "<script", "\n<script") 
+          modifiedBody = string.gsub(modifiedBody, "</script>", "</script>\n") 
   end
 
 
-  -- for line in modifiedBody:gmatch("([^\n]*)\n?") do
-  for line in body:gmatch("([^\n]*)\n?") do
+  -- for line in body:gmatch("([^\n]*)\n?") do
+  for line in modifiedBody:gmatch("([^\n]*)\n?") do
 	if ((string.match(line,"<script")) and (string.match(line, "src=\""))) then
 		local extracted = string.match(line, 'src="(.*)%"')
 		if string.match(extracted, "^http") then 
-        		-- stdnse.debug1("before: %s ", extracted)
 			extracted = extracted:gsub("\".*", "")
-        		-- stdnse.debug1("after: %s ", extracted)
 			table.insert(javascript, extracted.." url: "..URL)
 		end
 	end 

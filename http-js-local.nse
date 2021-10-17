@@ -121,13 +121,14 @@ action = function(host, port)
 		stdnse.debug1("debug> %s", line)
         	if ( (string.match(line,"<script"))  and ( string.match(line,"http")  ) ) then
                 	APPEND = 0; 
-        	elseif ( (string.match(line,"<script"))  and ( string.match(line,"src=/")  ) ) then
-                	APPEND = 1; 
         	elseif ((string.match(line,"<script")) and (string.match(line,"</script>")))  then
                 	APPEND = 0; 
                 	table.insert(array,line)
                 	script = table2String(array)
                 	table.insert(javascript,script)
+			array = {} 
+        	elseif ( (string.match(line,"<script"))  and ( string.match(line,"src=/")  ) ) then
+                	APPEND = 1; 
         	elseif (string.match(line,"<script"))  then
                 	APPEND = 1; 
         	elseif (string.match(line,"</script>")) then
@@ -135,6 +136,7 @@ action = function(host, port)
                 	table.insert(array,line)
                 	script = table2String(array)
                 	table.insert(javascript,script)
+			array = {} 
         	end 
 	end
         if APPEND == 1 then 
