@@ -137,12 +137,14 @@ action = function(host, port)
 
   local result = {}
   result = stdnse.output_table()
-  result["URL"] = URL
-  result["count"] = #javascript
-  result["javascript"] = javascript
+  if #javascript then 
+        result["URL"] = URL
+        result["count"] = #javascript
+        result["javascript"] = javascript
+  else 
+          result = "no local javascript detected"
+  end 
 
-  -- local returnValue = "found "..#javascript.." scripts in page "..URL
   return result
-  -- return javascript
 
 end
