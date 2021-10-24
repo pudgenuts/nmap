@@ -109,27 +109,36 @@ action = function(host, port)
   local APPEND = 0
   local array = {}
   
-  -- local modifiedBody =  body:gsub("%<script", "%\n<script")
-  if ( string.find(body, "<script") ) then 
-          string.gsub(body, "<script", "\n<script") 
-  end
+  local modifiedBody =  string.gsub(body, "</script>", "</script>\n")
+  local modifiedBody =  string.gsub(modifiedBody, "<script>", "\n</script>")
+  stdnse.debug3(modifiedBody)
 
-  -- for line in modifiedBody:gmatch("([^\n]*)\n?") do
-  for line in body:gmatch("([^\n]*)\n?") do
-        stdnse.debug1("debug> %s", line)
+  for line in modifiedBody:gmatch("([^\n]*)\n?") do
+        
 	line = ltrim(line)
 	line = rtrim(line)
-	
-        if ( (string.match(line,"<script"))  and ( string.match(line,"http")  ) ) then
-                APPEND = 0; 
-        elseif (string.match(line,"<script"))  then
-                APPEND = 1; 
-        elseif (string.match(line,"</script>")) then
-                APPEND = 0; 
-                table.insert(array,line)
-                script = table2String(array)
-                table.insert(javascript,script)
-        end 
+	if ( string.match(line,"script")) then 
+		stdnse.debug1("debug> %s", line)
+        	if ( (string.match(line,"<script"))  and ( string.match(line,"http")  ) ) then
+                	APPEND = 0; 
+        	elseif ((string.match(line,"<script")) and (string.match(line,"</script>")))  then
+                	APPEND = 0; 
+                	table.insert(array,line)
+                	script = table2String(array)
+                	table.insert(javascript,script)
+			array = {} 
+        	elseif ( (string.match(line,"<script"))  and ( string.match(line,"src=/")  ) ) then
+                	APPEND = 1; 
+        	elseif (string.match(line,"<script"))  then
+                	APPEND = 1; 
+        	elseif (string.match(line,"</script>")) then
+                	APPEND = 0; 
+                	table.insert(array,line)
+                	script = table2String(array)
+                	table.insert(javascript,script)
+			array = {} 
+        	end 
+	end
         if APPEND == 1 then 
                 table.insert(array,line)
         end
