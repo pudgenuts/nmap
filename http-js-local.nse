@@ -19,13 +19,9 @@ description = [[The script is used to fetch just the default index file from a s
 -- @output
 -- | http-fetch-index: <html> ... </html>
 --
-
 author = "Paul M Johnson inspire by code for http-fetch by Gyanendra Mishra)"
-
 license = "Same as Nmap--See https://nmap.org/book/man-legal.html"
-
 categories = {"safe"}
-
 portrule = shortport.http
 
 function ltrim(s)
@@ -120,22 +116,24 @@ action = function(host, port)
 	if ( string.match(line,"script")) then 
 		stdnse.debug1("debug> %s", line)
         	if ( (string.match(line,"<script"))  and ( string.match(line,"http")  ) ) then
-                	APPEND = 0; 
+            APPEND = 0; 
         	elseif ((string.match(line,"<script")) and (string.match(line,"</script>")))  then
-                	APPEND = 0; 
-                	table.insert(array,line)
-                	script = table2String(array)
-                	table.insert(javascript,script)
+            APPEND = 0; 
+            table.insert(array,line)
+            script = table2String(array)
+            table.insert(javascript,script)
 			array = {} 
-        	elseif ( (string.match(line,"<script"))  and ( string.match(line,"src=/")  ) ) then
-                	APPEND = 1; 
+        	elseif ( (string.match(line,"<script"))  and ( string.match(line,"src=/")  and string.match(line,"</script>") ) ) then
+            -- this should match a local include 
+            APPEND = 1; 
         	elseif (string.match(line,"<script"))  then
-                	APPEND = 1; 
+            APPEND = 1; 
         	elseif (string.match(line,"</script>")) then
-                	APPEND = 0; 
-                	table.insert(array,line)
-                	script = table2String(array)
-                	table.insert(javascript,script)
+            APPEND = 0; 
+            table.insert(array,line)
+            table.insert(array,"\n")
+            script = table2String(array)
+            table.insert(javascript,script)
 			array = {} 
         	end 
 	end
@@ -146,14 +144,12 @@ action = function(host, port)
 
   local result = {}
   result = stdnse.output_table()
-  if #javascript then 
-        result["URL"] = URL
-        result["count"] = #javascript
-        result["javascript"] = javascript
-  else 
-          result = "no local javascript detected"
-  end 
+  result["URL"] = URL
+  result["script count"] = #javascript
+  result["javascript"] = javascript
 
+  -- local returnValue = "found "..#javascript.." scripts in page "..URL
   return result
+  -- return javascript
 
 end
