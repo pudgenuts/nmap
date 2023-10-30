@@ -8,10 +8,10 @@ local stdnse = require "stdnse"
 local string = require "string"
 local table = require "table"
 
-description = [[The script is used to fetch just the default index page 
-and compute an MD5 sum for the returned HTML, will also return any URL 
-for a an allowed redirect
-
+description = [[
+        The script is used to fetch just the default index page 
+        and compute an MD5 sum for the returned HTML, will also return any URL 
+        for a an allowed redirect
 ]]
 
 ---
@@ -20,17 +20,15 @@ for a an allowed redirect
 -- @output
 -- | http-fetch-index:
 -- |   URL: /
+-- |   html: <body returned to GET>
 -- |   md5sum: 5db4fa93a1f7b28c117939af8ee91344
--- |   html:
--- | <HTML> ....
--- | </HTML>
+-- | 
 --
 
 author = "Paul M Johnson inspire by code for http-fetch by Gyanendra Mishra)"
 license = "Same as Nmap--See https://nmap.org/book/man-legal.html"
 categories = {"safe"}
 portrule = shortport.http
-
 
 local function fetchPage(host, port, url, output)
   local response = http.get(host, port, url, nil)
@@ -43,6 +41,7 @@ local function fetchPage(host, port, url, output)
                    URL = url 
            end 
    end 
+   stdnse.debug3("response: %s",response.status)
 
 
   local body = ""
@@ -51,6 +50,8 @@ local function fetchPage(host, port, url, output)
         stdnse.debug3("sucess "..response.status);
 	LEN = tonumber(response.header["content-length"])
         body = response.body
+  elseif response and response.status and response.status == 302 then 
+        body = "redirect to " .. URL
   elseif response and response.status and response.status == 404 then
         stdnse.debug1("strong bad says \"404ed!!!\"")
 	LEN = tonumber(response.header["content-length"])
@@ -60,8 +61,7 @@ local function fetchPage(host, port, url, output)
         body = "no data returned"
   end
 
- return URL, body
-
+ return URL, response.status, body
 
 end
 
@@ -73,14 +73,20 @@ action = function(host, port)
   local output = stdnse.output_table()
   local patterns = {}
 
-  local URL, body = fetchPage(host, port, url, output)
-  md5 = stdnse.tohex(openssl.md5(body))
-
+  local URL, RC, body = fetchPage(host, port, url, output)
   local result = {}
-  result = stdnse.output_table()
-  result["URL"] = URL
-  result["md5sum"] = md5
-  result["html"] = body
+  if RC == 302 then  
+        -- local result = {}
+        result = stdnse.output_table()
+        result["URL"] = body 
+  else
+        md5 = stdnse.tohex(openssl.md5(body))
+        -- local result = {}
+        result = stdnse.output_table()
+        result["URL"] = URL
+        result["html"] = body
+        result["md5sum"] = md5
+  end 
 
   return result
 
